@@ -1,1 +1,72 @@
-/* No CSS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*---------------------------------------/*
+  # SETTINGS
+/*---------------------------------------*/
+/*---------------------------------------/*
+  # GENERIC
+/*---------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+/*---------------------------------------/*
+  # ELEMENTS
+/*---------------------------------------*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*---------------------------------------/*
+  # OBJECTS
+/*---------------------------------------*/
+.c-header {
+  background-color: black;
+}
+
+/*---------------------------------------/*
+  # COMPONENTS
+/*---------------------------------------*/
+.navbar-dark .navbar-nav .nav-link {
+  font-weight: 500;
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ff0Dff), to(#00d4ff));
+  background: linear-gradient(90deg, #ff0Dff 0%, #00d4ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus {
+  text-decoration: underline;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*---------------------------------------/*
+  # UTILITIES
+/*---------------------------------------*/
