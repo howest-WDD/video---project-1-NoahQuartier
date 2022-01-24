@@ -23,11 +23,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-size: 5rem;
+}
+
 /*---------------------------------------/*
   # OBJECTS
 /*---------------------------------------*/
 .c-header {
   background-color: black;
+  height: 100vh;
 }
 
 /*---------------------------------------/*
@@ -65,6 +70,28 @@ body {
 .navbar-toggler:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.c-banner {
+  color: white;
+  text-align: center;
+  background: url(../img/kryptek_header.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 247px 0;
+}
+
+.c-banner a {
+  background: -webkit-gradient(linear, left top, right top, from(#ff0Dff), to(#00d4ff));
+  background: linear-gradient(90deg, #ff0Dff 0%, #00d4ff 100%);
+  width: 15%;
+}
+
+.c-banner a:hover {
+  font-weight: 700;
+}
+
+.c-banner__item {
+  margin: 0 auto;
 }
 
 /*---------------------------------------/*

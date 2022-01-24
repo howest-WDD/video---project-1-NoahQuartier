@@ -27,12 +27,15 @@ $color-blue: rgba(0,212,255,1);
 body {
     font-family: $font;
 }
-
+h1 {
+    font-size: 5rem;
+}
 /*---------------------------------------/*
   # OBJECTS
 /*---------------------------------------*/
 .c-header {
     background-color: black;
+    height: 100vh;
 }
 /*---------------------------------------/*
   # COMPONENTS
@@ -59,9 +62,6 @@ body {
         padding-left: 1rem;
     }
 }
-
-
-
 .navbar-dark .navbar-toggler {
     border: none;
 }
@@ -71,6 +71,27 @@ body {
     }
     
 }
+.c-banner {
+    color: white;
+    text-align: center;
+    background: url(../img/kryptek_header.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 247px 0;
+    a {
+        background: linear-gradient(90deg, $color-pink 0%, $color-blue 100%);
+        width: 15%;
+        &:hover {
+            font-weight: 700;
+        }
+    }
+
+  
+  
+    &__item {
+      margin: 0 auto;
+    }
+}
+
 /*---------------------------------------/*
   # UTILITIES
 /*---------------------------------------*/
