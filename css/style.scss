@@ -30,6 +30,13 @@ body {
 h1 {
     font-size: 5rem;
 }
+h2 {
+    font-weight: 700;
+    text-align: right;
+    @media (min-width: 768px) {
+      text-align: center;
+    }
+}
 /*---------------------------------------/*
   # OBJECTS
 /*---------------------------------------*/
@@ -85,14 +92,36 @@ h1 {
             background: linear-gradient(90deg, $color-pink 0%, $color-blue 100%);
         }
     }
-
-  
-  
     &__item {
       margin: 0 auto;
     }
 }
-
+.c-concept {
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+  @media (max-width: 993px) {
+    padding-bottom: 5rem;
+  }
+  display: flex;
+  justify-content: center;
+  &__item {
+    @media only screen and (max-width: 993px) {
+      img {
+        display: none;
+      }
+    }
+    h2 {
+      display: flex;
+      justify-content: center;
+      padding-bottom: $spacing-default;
+    }
+  }
+  &__tekst {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+}
 /*---------------------------------------/*
   # UTILITIES
 /*---------------------------------------*/
