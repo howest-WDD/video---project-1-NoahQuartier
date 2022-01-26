@@ -29,13 +29,6 @@ h1 {
 
 h2 {
   font-weight: 700;
-  text-align: right;
-}
-
-@media (min-width: 768px) {
-  h2 {
-    text-align: center;
-  }
 }
 
 a {
@@ -155,6 +148,31 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.c-patreon {
+  color: white;
+  background-color: black;
+  padding-top: 8rem;
+  text-align: center;
+  position: relative;
+}
+
+.c-patreon__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-patreon__item--prijs {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 /*---------------------------------------/*

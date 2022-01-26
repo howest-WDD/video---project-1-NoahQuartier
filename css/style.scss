@@ -32,10 +32,6 @@ h1 {
 }
 h2 {
     font-weight: 700;
-    text-align: right;
-    @media (min-width: 768px) {
-      text-align: center;
-    }
 }
 a {
   text-decoration: none;
@@ -125,6 +121,25 @@ a {
     flex-flow: column;
     justify-content: center;
   }
+}
+.c-patreon {
+    color: white;
+    background-color: black;
+    padding-top: 8rem;
+    text-align: center;
+    position: relative;
+    
+    &__item {
+      display: flex;
+      justify-content: center;
+
+      &--prijs {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
 }
 /*---------------------------------------/*
   # UTILITIES
