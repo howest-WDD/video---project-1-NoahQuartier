@@ -175,6 +175,66 @@ a {
           transform: translate(-50%, -50%);
 }
 
+.c-list {
+  color: white;
+  background-color: black;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-list li {
+  padding-bottom: 2rem;
+}
+
+.c-video {
+  background-color: black;
+  color: white;
+}
+
+.c-video__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.c-video__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10rem;
+}
+
+.c-video__video iframe {
+  width: 70vw;
+  height: 70vh;
+}
+
+.c-over__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-over__tekst p {
+  text-align: center;
+}
+
 /*---------------------------------------/*
   # UTILITIES
 /*---------------------------------------*/

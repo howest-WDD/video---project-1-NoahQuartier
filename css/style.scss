@@ -141,6 +141,49 @@ a {
       }
     }
 }
+.c-list {
+  color: white;
+  background-color: black;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  li {
+    padding-bottom: 2rem;
+  }
+}
+.c-video {
+  background-color: black;
+  color: white;
+  &__item {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+  &__video {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10rem;
+    iframe {
+      width: 70vw;
+      height: 70vh;
+    }
+  }
+}
+.c-over {
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+  &__tekst {
+    p {
+      text-align: center;
+    }
+
+  }
+    
+}
+  
 /*---------------------------------------/*
   # UTILITIES
 /*---------------------------------------*/
