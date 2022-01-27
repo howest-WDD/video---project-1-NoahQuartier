@@ -146,6 +146,9 @@ a {
   background-color: black;
   padding-top: 5rem;
   padding-bottom: 10rem;
+  @media only screen and (max-width: 993px) {
+    padding-bottom: 1rem;
+  }
   display: flex;
   justify-content: center;
   li {
@@ -159,11 +162,17 @@ a {
     display: flex;
     justify-content: center;
     padding-bottom: 5rem;
+    @media only screen and (max-width: 993px) {
+      padding-bottom: 1rem;
+    }
   }
   &__video {
     display: flex;
     justify-content: center;
     padding-bottom: 10rem;
+    @media only screen and (max-width: 993px) {
+      padding-bottom: 1rem;
+    }
     iframe {
       width: 70vw;
       height: 70vh;
@@ -172,6 +181,8 @@ a {
 }
 .c-over {
   &__item {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
     display: flex;
     justify-content: center;
   }
