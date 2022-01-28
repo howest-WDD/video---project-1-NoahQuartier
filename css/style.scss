@@ -30,6 +30,9 @@ body {
 }
 h1 {
     font-size: 5rem;
+    @media only screen and (max-width: 577px) {
+      font-size: 3rem;
+    }
 }
 h2 {
     font-weight: 700;
@@ -146,12 +149,24 @@ a {
       a {
         color: $color-pink;
       }
-
+      &--speakers {
+        @media only screen and (max-width: 577px) {
+          display: none;
+        }
+      }
+      &--tekst {
+        @media only screen and (max-width: 577px) {
+          padding-bottom: 5rem;
+        }
+      }
       &--prijs {
         position: absolute;
         top: 65%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @media only screen and (max-width: 577px) {
+          display: none;
+        }
       }
     }
 }
@@ -165,6 +180,9 @@ a {
   }
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 577px) {
+    flex-flow: column;
+  }
   li {
     padding-bottom: 2rem;
   }
@@ -191,6 +209,10 @@ a {
     iframe {
       width: 70vw;
       height: 70vh;
+      @media only screen and (max-width: 768px) {
+        width: 50vw;
+      height: 50vh;
+      }
     }
   }
 }
@@ -223,11 +245,12 @@ a {
 }
 
 .c-carousel {
-    width: 50vw;
-    height: 50vh;
+    width: 60vw;
     margin-bottom: 15rem;
-    @media only screen and (max-width: 993px) {
+    @media only screen and (max-width: 577px) {
       margin-bottom: unset;
+      width: 70vw;
+      height: 40vh;
     }
 }
 .c-contact {
@@ -273,6 +296,9 @@ a {
 }
 .c-footer {
   padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
   &__kryptek {
     width: 20%;
     height: 20%;
@@ -299,6 +325,16 @@ a {
     img {
       width: 10%;
       padding-bottom: $spacing-default;
+    }
+  }
+  &__pict {
+    display: flex;
+    justify-content: center;
+    svg {
+      @media only screen and (max-width: 577px) {
+
+      padding-top: $spacing-default;
+      }
     }
   }
 }

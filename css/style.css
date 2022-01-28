@@ -27,6 +27,12 @@ h1 {
   font-size: 5rem;
 }
 
+@media only screen and (max-width: 577px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
 h2 {
   font-weight: 700;
   text-transform: uppercase;
@@ -185,12 +191,30 @@ a {
   color: #ff0Dff;
 }
 
+@media only screen and (max-width: 577px) {
+  .c-patreon__item--speakers {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .c-patreon__item--tekst {
+    padding-bottom: 5rem;
+  }
+}
+
 .c-patreon__item--prijs {
   position: absolute;
   top: 65%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 577px) {
+  .c-patreon__item--prijs {
+    display: none;
+  }
 }
 
 .c-list {
@@ -209,6 +233,15 @@ a {
 @media only screen and (max-width: 993px) {
   .c-list {
     padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .c-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
   }
 }
 
@@ -259,6 +292,13 @@ a {
   height: 70vh;
 }
 
+@media only screen and (max-width: 768px) {
+  .c-video__video iframe {
+    width: 50vw;
+    height: 50vh;
+  }
+}
+
 .c-over__item {
   padding-top: 7rem;
   padding-bottom: 3rem;
@@ -297,14 +337,15 @@ a {
 }
 
 .c-carousel {
-  width: 50vw;
-  height: 50vh;
+  width: 60vw;
   margin-bottom: 15rem;
 }
 
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 577px) {
   .c-carousel {
     margin-bottom: unset;
+    width: 70vw;
+    height: 40vh;
   }
 }
 
@@ -374,6 +415,16 @@ a {
 
 .c-footer {
   padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .c-footer__kryptek {
@@ -402,6 +453,21 @@ a {
 .c-footer__howest img {
   width: 10%;
   padding-bottom: 1rem;
+}
+
+.c-footer__pict {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 577px) {
+  .c-footer__pict svg {
+    padding-top: 1rem;
+  }
 }
 
 .form-check {
