@@ -29,6 +29,7 @@ h1 {
 
 h2 {
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 a {
@@ -275,6 +276,24 @@ a {
   color: white;
 }
 
+.c-contact button {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  color: black;
+}
+
+.c-contact button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ff0Dff), to(#00d4ff));
+  background: linear-gradient(90deg, #ff0Dff 0%, #00d4ff 100%);
+  color: black;
+}
+
 .c-contact__item {
   padding-top: 7rem;
   padding-bottom: 3rem;
@@ -288,6 +307,29 @@ a {
 
 .c-contact__tekst p {
   text-align: center;
+}
+
+.c-contact__form {
+  padding-bottom: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-contact__form button {
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.form-check {
+  padding-top: 1rem;
+}
+
+.form-group {
+  padding-top: 2rem;
 }
 
 /*---------------------------------------/*

@@ -32,6 +32,7 @@ h1 {
 }
 h2 {
     font-weight: 700;
+    text-transform: uppercase;
 }
 a {
   text-decoration: none;
@@ -209,6 +210,18 @@ a {
   //padding-top: 5rem;
   background-color: black;
   color: white;
+  button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: black;
+    &:hover {
+        background: linear-gradient(90deg, $color-pink 0%, $color-blue 100%);
+        color: black;
+    }
+  }
+  
   &__item {
     padding-top: 7rem;
     padding-bottom: 3rem;
@@ -220,6 +233,21 @@ a {
       text-align: center;
     }
   }
+  &__form {
+    padding-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    button {
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+  }
+}
+.form-check {
+  padding-top: $spacing-default;
+}
+.form-group {
+  padding-top: 2rem;
 }
 /*---------------------------------------/*
   # UTILITIES
