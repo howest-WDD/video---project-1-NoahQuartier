@@ -255,6 +255,20 @@ a {
   text-align: center;
 }
 
+.c-over__carousel {
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+}
+
+.c-over__carousel p {
+  text-align: center;
+}
+
+.c-carousel {
+  width: 50vw;
+  height: 50vh;
+}
+
 /*---------------------------------------/*
   # UTILITIES
 /*---------------------------------------*/

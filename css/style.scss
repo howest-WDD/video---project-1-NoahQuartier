@@ -190,11 +190,20 @@ a {
     p {
       text-align: center;
     }
-
   }
-    
+  &__carousel {
+    padding-top: 10rem;
+    padding-bottom: $spacing-default;
+    p {
+      text-align: center;
+    }
+  } 
 }
-  
+
+.c-carousel {
+    width: 50vw;
+    height: 50vh;
+}
 /*---------------------------------------/*
   # UTILITIES
 /*---------------------------------------*/
