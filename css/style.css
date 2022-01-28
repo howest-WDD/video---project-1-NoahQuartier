@@ -267,6 +267,27 @@ a {
 .c-carousel {
   width: 50vw;
   height: 50vh;
+  margin-bottom: 15rem;
+}
+
+.c-contact {
+  background-color: black;
+  color: white;
+}
+
+.c-contact__item {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-contact__tekst p {
+  text-align: center;
 }
 
 /*---------------------------------------/*
