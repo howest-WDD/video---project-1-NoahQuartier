@@ -184,6 +184,10 @@ a {
   &__item {
     padding-top: 7rem;
     padding-bottom: 3rem;
+    @media only screen and (max-width: 993px) {
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+    }
     display: flex;
     justify-content: center;
   }
@@ -194,6 +198,9 @@ a {
   }
   &__carousel {
     padding-top: 10rem;
+    @media only screen and (max-width: 993px) {
+      padding-top: 2rem;
+    }
     padding-bottom: $spacing-default;
     p {
       text-align: center;
@@ -205,9 +212,15 @@ a {
     width: 50vw;
     height: 50vh;
     margin-bottom: 15rem;
+    @media only screen and (max-width: 993px) {
+      margin-bottom: unset;
+    }
 }
 .c-contact {
-  //padding-top: 5rem;
+  padding-top: 5rem;
+  @media only screen and (max-width: 993px) {
+    padding-top: $spacing-default;
+  }
   background-color: black;
   color: white;
   button {
@@ -243,12 +256,21 @@ a {
     }
   }
 }
+.c-footer {
+  color: black;
+  padding-top: 5rem;
+  img {
+    width: 20%;
+    height: 20%;
+  }
+}
 .form-check {
   padding-top: $spacing-default;
 }
 .form-group {
   padding-top: 2rem;
 }
+
 /*---------------------------------------/*
   # UTILITIES
 /*---------------------------------------*/

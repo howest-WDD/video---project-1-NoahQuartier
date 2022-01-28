@@ -252,6 +252,13 @@ a {
           justify-content: center;
 }
 
+@media only screen and (max-width: 993px) {
+  .c-over__item {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
 .c-over__tekst p {
   text-align: center;
 }
@@ -259,6 +266,12 @@ a {
 .c-over__carousel {
   padding-top: 10rem;
   padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 993px) {
+  .c-over__carousel {
+    padding-top: 2rem;
+  }
 }
 
 .c-over__carousel p {
@@ -271,9 +284,22 @@ a {
   margin-bottom: 15rem;
 }
 
+@media only screen and (max-width: 993px) {
+  .c-carousel {
+    margin-bottom: unset;
+  }
+}
+
 .c-contact {
+  padding-top: 5rem;
   background-color: black;
   color: white;
+}
+
+@media only screen and (max-width: 993px) {
+  .c-contact {
+    padding-top: 1rem;
+  }
 }
 
 .c-contact button {
@@ -322,6 +348,16 @@ a {
 .c-contact__form button {
   margin: 0 auto;
   margin-top: 3rem;
+}
+
+.c-footer {
+  color: black;
+  padding-top: 5rem;
+}
+
+.c-footer img {
+  width: 20%;
+  height: 20%;
 }
 
 .form-check {
