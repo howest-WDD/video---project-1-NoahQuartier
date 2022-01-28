@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*---------------------------------------/*
   # SETTINGS
 /*---------------------------------------*/
@@ -32,9 +32,18 @@ h2 {
   text-transform: uppercase;
 }
 
+h4 {
+  font-size: 1.3rem;
+  font-family: "Mukta", sans-serif;
+  font-weight: 500;
+}
+
+h6 {
+  color: black;
+}
+
 a {
   text-decoration: none;
-  color: #ff0Dff;
 }
 
 /*---------------------------------------/*
@@ -122,6 +131,10 @@ a {
   }
 }
 
+.c-concept a {
+  color: #ff0Dff;
+}
+
 @media only screen and (max-width: 993px) {
   .c-concept__item img {
     display: none;
@@ -168,6 +181,10 @@ a {
           justify-content: center;
 }
 
+.c-patreon__item a {
+  color: #ff0Dff;
+}
+
 .c-patreon__item--prijs {
   position: absolute;
   top: 65%;
@@ -180,7 +197,7 @@ a {
   color: white;
   background-color: black;
   padding-top: 5rem;
-  padding-bottom: 10rem;
+  padding-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,6 +219,7 @@ a {
 .c-video {
   background-color: black;
   color: white;
+  padding-top: 3rem;
 }
 
 .c-video__item {
@@ -264,7 +282,7 @@ a {
 }
 
 .c-over__carousel {
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 1rem;
 }
 
@@ -274,7 +292,7 @@ a {
   }
 }
 
-.c-over__carousel p {
+.c-over__carousel p, .c-over__carousel h4 {
   text-align: center;
 }
 
@@ -291,7 +309,7 @@ a {
 }
 
 .c-contact {
-  padding-top: 5rem;
+  padding-top: 3rem;
   background-color: black;
   color: white;
 }
@@ -331,7 +349,11 @@ a {
           justify-content: center;
 }
 
-.c-contact__tekst p {
+.c-contact__tekst {
+  padding-bottom: 1rem;
+}
+
+.c-contact__tekst p, .c-contact__tekst h4 {
   text-align: center;
 }
 
@@ -351,13 +373,35 @@ a {
 }
 
 .c-footer {
-  color: black;
   padding-top: 5rem;
 }
 
-.c-footer img {
+.c-footer__kryptek {
   width: 20%;
   height: 20%;
+}
+
+.c-footer__nav a {
+  color: black;
+}
+
+.c-footer__nav a:hover {
+  color: #ff0Dff;
+}
+
+.c-footer__nav:focus {
+  text-decoration: underline;
+  color: white;
+}
+
+.c-footer__howest p {
+  font-size: 0.7rem;
+  padding-top: 1rem;
+}
+
+.c-footer__howest img {
+  width: 10%;
+  padding-bottom: 1rem;
 }
 
 .form-check {
@@ -366,6 +410,14 @@ a {
 
 .form-group {
   padding-top: 2rem;
+}
+
+.form-control:focus {
+  border: 1px solid #ff0Dff;
+}
+
+svg:hover {
+  fill: #ff0Dff;
 }
 
 /*---------------------------------------/*
